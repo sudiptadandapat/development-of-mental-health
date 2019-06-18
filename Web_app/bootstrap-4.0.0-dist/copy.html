@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      
+  <script >
+      var image=new Array();
+
+function insert(){
+    var imageValue = document.getElementById('image').value;
+    image[image.length]=imageValue;
+  }
+
+function show() {
+  var content="<b>All Values entered by User are :</b><br>";
+  for(var i = 0; i < image.length; i++) {
+     content +=image[i]+"<br>";
+  }
+  document.getElementById('display').innerHTML = content;
+}
+      </script>
+  </head>
+
+    <body>
+        <h1>Puzzle</h1>
+        
+        <form style="width: 1000px;">
+<!-- image section--->
+     
+    <img src="https://www.simplemost.com/wp-content/uploads/2017/08/puzzle.png"  height="200" width="450" />
+
+    <p>This made me:: </p><input id="image" type="text" placeholder="solve this using one word" size="63"/></br>
+          
+    <input type="button" value="Save" onclick="insert();" />
+    <input type="button" value="Show" onclick="show();" />    
+        
+        </form>
+    
+    <div id="display"></div>
+
+</body>
+</html>

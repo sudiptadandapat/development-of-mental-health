@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mental Health Test</title>
+        <link href ="quiz.css" rel="stylesheet" >
+        <script>
+      function results(){
+          
+       
+       var imagetest1 = document.getElementById('imagetest1').value;
+       var imagetest2 = document.getElementById('imagetest2').value;
+       var imagetest3 = document.getElementById('imagetest3').value;
+       var imagetest4 = document.getElementById('imagetest4').value;
+       var imagetest5 = document.getElementById('imagetest5').value;
+       
+        document.write(imagetest1 + "</br>");
+        document.write(imagetest2 + "</br>");
+        document.write(imagetest3 + "</br>");
+        document.write(imagetest4 + "</br>");
+        document.write(imagetest5 + "</br>");
+        
+       
+   }
+         /*   function gen_url()
+            {
+                var imagetest1= document.getElementById('imagetest1').value;
+                var newurl;
+       
+                document.getElementById('newurl')='http://0.0.0.0:8080/'+document.getElementById(imagetest1);
+                document.write('inside gen_url')
+                document.write(newurl);
+            }*/
+            
+ function clickyClick1() {
+    url = 'http://127.0.0.1:5000/classify/' + document.getElementById("imagetest1").value
+    window.open(url, '_blank');
+}
+function clickyClick2() {
+    url = 'http://127.0.0.1:5000/classify/' + document.getElementById("imagetest2").value
+    window.open(url, '_blank');
+}
+function clickyClick3() {
+    url = 'http://127.0.0.1:5000/classify/' + document.getElementById("imagetest3").value
+    window.open(url, '_blank');
+}
+function clickyClick4() {
+    url = 'http://127.0.0.1:5000/classify/' + document.getElementById("imagetest4").value
+    window.open(url, '_blank');
+}
+function clickyClick5() {
+    url = 'http://127.0.0.1:5000/classify/' + document.getElementById("imagetest5").value
+    window.open(url, '_blank');
+    window.open(url, '_blank');
+}
+
+</script>
+
+        
+    </head>
+    <body>
+        <h1>Image Perception</h1>
+        
+        <form> 
+<!-- image section--->
+     
+    <img src="https://www.schweizer-illustrierte.ch/sites/default/files/styles/landscape-1280x854/public/teaser-images/web-sb10062916kk-001.jpg.jpg?itok=SFqtXUL0"  height="200" width="450" />
+
+    <p>This made me:: </p><input name="i1" id="imagetest1" type="text" value="" placeholder="write the emotion that you feel after seeing this img" size="63"/></br>
+    <input id="button" type="button" value="Submit!" onclick="clickyClick1()"/></br> 
+
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/37/89/2b/37892bf4c595918e70cec96da18022f0.jpg"  height="200" width="450"/>
+
+    <p>This made me:: </p><input name="i2" id="imagetest2" type="text" value="" placeholder="write the emotion that you feel after seeing this img" size="63"/></br>
+     <!--<a href=http://0.0.0.0:8080/classify/i2 target="_blank">Translate your comment and verify it</a>-->
+    <input id="button" type="button" value="Submit!" onclick="clickyClick2()"/></br>
+
+    <img src="http://smashinghub.com/wp-content/uploads/2012/04/Smiles-Behind-the-Shadows-by-Paul-Quiambao.jpg"  height="200" width="450"/>
+    
+    <p>This made me:: </p><input name="i3" id="imagetest3" type="text" value="" placeholder="write the emotion that you feel after seeing this img" size="63"/></br>
+    <!--<a href=http://0.0.0.0:8080/classify/i3 target="_blank">Translate your comment and verify it</a>-->
+    <input id="button" type="button" value="Submit!" onclick="clickyClick3()"/></br>
+
+<img src="http://i.dailymail.co.uk/i/pix/2013/05/06/article-2320238-19A558EB000005DC-844_634x349.jpg"   height="200" width="450" />
+  
+  <p>This made me:: </p><input name="i4" id="imagetest4" type="text" value="" placeholder="write the emotion that you feel after seeing this img" size="63"/></br> 
+ <!--<a href=http://0.0.0.0:8080/classify/i4 target="_blank">Translate your comment and verify it</a>-->
+<input id="button" type="button" value="Submit!" onclick="clickyClick4()"/></br>
+
+<img src="https://www.obamaeagle.org/wp-content/uploads/2017/10/01.jpg"   height="200" width="450"/>
+  
+  <p>This made me:: </p><input name="i5" id="imagetest5" type="text" value="" placeholder="write the emotion that you feel after seeing this img" size="63"/></br>
+<!--<a href=http://0.0.0.0:8080/classify/i5 target="_blank">Translate your comment and verify it</a>-->
+<input id="button" type="button" value="Submit!" onclick="clickyClick5()"/></br>
+<!--<input id="button" type="button" value="Submit!" onclick="clickyClick()"/></br>-->    
+
+        </form>
+
+
+<!--submit button-->
+
+<div id ="after_submit">
+<p id ="name"></p>
+    <p id ="correct"></p>
+    
+<div style=" background: green;
+    width: 25%;        
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    float: right;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;"><a href="quizsub.html" style=" text-decoration: none; font-size: 25px; font-family: cursive; color: white;">Next</a></div>
+
+</body>
+</html>

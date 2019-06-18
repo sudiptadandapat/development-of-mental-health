@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mental Health Test</title>
+        <link href ="quiz.css" rel="stylesheet" >
+        <script>
+      function results(){
+          
+       
+       var imagetest1 = document.getElementById('imagetest1').value;
+          document.write(imagetest + "</br>");
+          
+          
+          
+        
+
+        
+       
+   }
+            
+
+     // document.getElementById("after_submit").style.visibility = "visible";
+</script>
+
+        
+    </head>
+    <body>
+        <h1>Image Perception</h1>
+        
+       <form onsubmit="results();" method="post" id="quiz" style="width: 1000px;" name="quiz">
+<!-- image section--->
+     
+    <img src="https://www.schweizer-illustrierte.ch/sites/default/files/styles/landscape-1280x854/public/teaser-images/web-sb10062916kk-001.jpg.jpg?itok=SFqtXUL0"  height="200" width="450" />
+
+    <p>This made me:: </p><input id="imagetest1" type="text" value="" placeholder="write the emotion that you feel after seeing this img" size="63"/></br>
+        <input id="button" type="button" value="Submit!" onclick="results();"></br>
+        
+</form>
+<div id ="after_submit">
+<p id ="name"></p>
+    <p id ="correct"></p>
+    
+<div style=" background: green;
+    width: 25%;        
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    float: right;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;"><a href="quizsub.html" style=" text-decoration: none; font-size: 25px; font-family: cursive; color: white;">Next</a></div>
+
+</body>
+</html>

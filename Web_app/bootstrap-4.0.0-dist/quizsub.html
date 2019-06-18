@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mental Health Test</title>
+        <link href ="quiz.css" rel="stylesheet" >
+        <script src="quiz.js" > </script>
+        
+    </head>
+    <body>
+        <h1 style="margin-left: 50px; text-align: center;">Describe Yourself</h1>
+        
+        <form id="quiz" style="width: 1000px; text-align: left; margin-left: 250px;" name="quiz">
+            <p>1. Which thing bothered you most last week?(some stressful or exciting feeling you gone through) </p>
+            <input type="text" id ="mc" name="question1" placeholder="Describe your feeling" size="100"></br>
+            <p>2. What kind of reactions do you have when something reminds you of the stressful experience( for example : heart pounding, trouble breathing, sweating)? </p>
+            <input type="text" id ="mc" name="question2" placeholder="Describe your feeling" size="100"></br>
+            <p>3. Describe, how much were you bothered by avoiding external reminders of stressful situations(like people,places,conversations,etc)?</p>
+            <input type="text" id ="mc" name="question3" placeholder="Describe your feeling" size="100"></br>
+            <p>4. How do you feel after encountering a stressful situation(Do you blame yourself or anyone else for that )?"</p>
+            <input type="text" id ="mc" name="question4" placeholder="Describe your feeling" size="100"></br>
+            <p>5. How do you feel interacting with strangers? </p>
+            <input type="text" id ="mc" name="question5" placeholder="Describe your feeling" size="100"></br>
+
+<div style=" background: green;
+    width: 25%;        
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    float: right;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;"><a href="copy.html" style=" text-decoration: none; font-size: 25px; font-family: cursive; color: white;">Next</a></div>
+<!submit button---->
+
+
+<input id="button" type="button" value="Submit!" onclick="check();"></br>
+    
+        </form>
+<div id ="after_submit">
+<p id ="message"></p>
+    <p id ="number_correct"></p>
+
+    </body>
+</html>

@@ -1,0 +1,281 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: courier new;
+    
+}
+.head{
+    position: absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+header{
+    background-image: url("https://cuidatenatur.com/wp-content/uploads/2017/12/01felicidad-1800x900.jpg");
+    height: 100vh;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*header area */
+#main-header{
+	  width:100%;
+	  height:100px;
+	  background:sandybrown;
+	  float:left;
+	  margin-top:-10px;
+       
+ }
+ #logo{
+	 width:250px;
+	 margin-top:10px;
+	 float:left;
+     
+ }
+ #ist{
+	 font-weight:bold;
+	 font-family:cursive;
+	 font-size:35px;
+	 color:white;
+	 margin-left:15px;
+ }
+ #iind{
+	 font-weight:bold;
+	 font-style:sans-serif;
+	 font-size:20px;
+	 color:white;
+ }
+ 
+/*styling navigation bar*/
+ .main-nav{
+	 width: 100%;
+	 height:15px;
+	 background: sandybrown;
+	 float: left; 
+     
+ }
+ 
+ .main-nav ul{
+	 list-style:none;
+	 margin:0;
+	 padding:0;
+	 overflow:visible;
+ }
+ .main-nav ul li{
+	 float:left;
+	 background-color:sandybrown;
+	 width:100px;
+	 height:40px;
+	 line-height:50px;
+	 text-align:center;
+	 font-size:20px;
+	 display:block;
+	 position:relative;
+     padding-right: 20px;
+     
+ }
+ .main-nav ul li:hover{
+	 background-color: saddlebrown;
+	 color:black;
+     height:41px;
+	 font-size:25px;
+	 font-family:cursive;
+ }
+ .main-nav ul li a{
+	 color:white;
+	 font-weight:bold;
+	 text-decoration:none;
+	 display:block;
+ }
+
+ .main-nav ul li a:hover{
+	 color:black;
+ }
+.logo img{
+    height: 100px;
+}
+.btn-awesome{
+    margin-top: 40px;
+}
+.btn{
+    border: 1px solid saddlebrown;
+    padding: 10px 30px;
+    color: saddlebrown;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-right: 20px;
+    text-decoration: none;
+    float: right;
+    position: relative;
+    top: -200px;
+}
+
+.btn-half:hover{
+    background-color:saddlebrown;
+    color: white;
+    transition: all 0.5s ease-in
+}
+
+.btn-full:hover{
+    background-color: saddlebrown;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+.login
+{
+    border:5px;
+    
+}
+.btn-mid{
+    font-size: 30px;
+    top:  -100px;
+    left: 350px;
+}
+.btn-mid:hover{
+    background-color:saddlebrown;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+
+/*for navigation slider*/
+#slide1 .content {
+    background-image: url("http://themanifestway.com/wp-content/uploads/2016/05/happy-person-e1404843762520.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+     padding: 200px;
+     font-weight: 200;
+}
+h1:hover{
+    cursor:pointer;
+    font-size:40px;
+    color:cadetblue;
+    font-family: Comic Sans MS;
+    font-weight: 200;
+    
+}
+#slide2 .content{
+    background-image: url("http://interiorspace.ru/photo/7d/7d2030c933f01c87fe49ac6fe0eb626f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.quotes1 {
+    
+    font-size:50px;
+    text-align:left;
+    top:-150px;
+    left: -50px;
+    position: relative;
+}
+.content .learn h3{
+     
+    font-size:30px;
+    text-align:left;
+    top:-300px;
+    left: 100px;
+    position: relative;
+}
+#slide3 .content{
+    background-image: url("https://www.qub.ac.uk/schools/media/Media,566209,en.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.live h1{
+     font-size:50px;
+    text-align:left;
+    top:-150px;
+    left: -50px;
+    position: relative;
+    font-family: sans-sarif;
+    font-weight:400;
+    text-transform:none;
+}
+
+.content .live h3{
+     color:aquamarine;
+    font-size:30px;
+    text-align:left;
+    top:-300px;
+    left: 100px;
+    position: relative;
+}
+.content .live h3:hover{
+    font-size: 20px;
+    font-family: cursive;
+    color:antiquewhite;
+    font-size: 35px;
+}
+#slide4 .content{
+     background-image: url("https://www.bridgestorecovery.com/wp-content/uploads/2018/03/pexels-photo-610293-855x570.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.explore h1{
+    font-size:50px;
+    text-align:center;
+    top:-150px;
+    left: -50px;
+    position: relative;
+    font-family: sans-sarif;
+    font-weight:400;
+    text-transform:none;
+}
+.content .explore h3{
+     color:aquamarine;
+    font-size:30px;
+    text-align:center;
+    top:-300px;
+    left: 100px;
+    position: relative;
+}
+.content .live h3:hover{
+    font-size: 20px;
+    font-family: cursive;
+    color:antiquewhite;
+    font-size: 35px;
+}
+
+.liveli {
+    font-family: cursive;
+    font-size: 30px;
+    font-style: oblique;
+    margin-left:0px;
+    margin-top: -250px;
+    color: blue;
+}
+.liveli a{
+    text-decoration:none;
+}
+.learn1{
+     text-decoration: none;
+    font-family: cursive;
+    font-size: 30px;
+    font-style: oblique;
+    margin-left:-800px;
+    color: blue;
+    margin-top:-350px;
+    
+}
+.learn a{
+    text-decoration: none;
+}
